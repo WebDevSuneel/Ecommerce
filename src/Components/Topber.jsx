@@ -115,7 +115,7 @@ function Topber() {
           </span>
         </NavLink>
       </div>
-      <div className="col-lg-4 col-6 text-left">
+      {/* <div className="col-lg-4 col-6 text-left">
         <form action="">
           <div className="input-group">
             <input
@@ -130,11 +130,11 @@ function Topber() {
             </div>
           </div>
         </form>
-      </div>
-      <div className="col-lg-4 col-6 text-right">
+      </div> */}
+      {/* <div className="col-lg-4 col-6 text-right">
         <p className="m-0">Customer Service</p>
         <h5 className="m-0">+012 345 6789</h5>
-      </div>
+      </div> */}
     </div>
   </div>
   {/* Topbar End */}

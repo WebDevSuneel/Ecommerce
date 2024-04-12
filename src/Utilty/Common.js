@@ -18,22 +18,26 @@ export function getTotalPriceCard(arrCard,couponCodeState){
 
  if(arrCard.length>0){
  totalPrice=price+10
- }
- if(arrCard.length>0&&'sunil100'===couponCodeState){
+ if('sunil100'==couponCodeState){
+    debugger
+    totalPrice=price+10
     totalPrice=price-100
  }
+ }
+ 
  
  return getPrecisionNumber(totalPrice)
 }
 
 export function getPrecisionNumber(no,precision=2){
+    debugger
     return parseFloat(no).toFixed(precision)
 }
 
 
 export function applyCouponCode(CouponCode){
-let Code=0
 if('sunil100'==CouponCode){
+    let Code=0
   return  Code-=100
 }
 else{
