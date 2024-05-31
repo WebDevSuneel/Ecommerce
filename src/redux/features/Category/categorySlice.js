@@ -9,8 +9,8 @@ const initaileSateCategory={
 }
 
 export const feachCategory=createAsyncThunk('category/feachCategory',()=>{
-    return axios.get('https://dummyjson.com/products/categories').then((respons)=>{
-         return respons.data
+    return axios.get('https://dummyjson.com/products/categories').then((respons)=>{    
+    return respons.data
     }).then((error)=>{
         return error
     })

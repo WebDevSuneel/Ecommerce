@@ -1,5 +1,5 @@
 export function capitalizeFirstLetter(string){
-    return string.charAt(0).toUpperCase() + string.slice(1);
+    return string.slug.charAt(0).toUpperCase() + string.slug.slice(1);
 }
 export function getPriceAfterDiscount(price,disPrcentge){
     let p=price - price * (disPrcentge/100)
@@ -18,7 +18,7 @@ export function getTotalPriceCard(arrCard,couponCodeState){
 
  if(arrCard.length>0){
  totalPrice=price+10
- if('sunil100'==couponCodeState){
+ if('sunil100'===couponCodeState){
     debugger
     totalPrice=price+10
     totalPrice=price-100
@@ -36,7 +36,7 @@ export function getPrecisionNumber(no,precision=2){
 
 
 export function applyCouponCode(CouponCode){
-if('sunil100'==CouponCode){
+if('sunil100'===CouponCode){
     let Code=0
   return  Code-=100
 }

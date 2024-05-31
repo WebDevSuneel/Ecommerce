@@ -5,6 +5,7 @@ import categorySlice, { feachCategory } from '../redux/features/Category/categor
 
 function Categories() {
   const categoryState=useSelector((state)=>state.category)
+  console.log(categoryState);
   
   const dispach=useDispatch()
   useEffect(()=>{
